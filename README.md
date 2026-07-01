@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# astraX Experiment Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This repository contains the complete experiment planning and validation framework for the astraX product development lifecycle.
 
-Currently, two official plugins are available:
+It serves as a centralized workspace for documenting, tracking, and validating product hypotheses through structured experiments and engineering evaluations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Repository Includes
 
-## React Compiler
+- Product benchmarking against competitor devices
+- Design validation experiments
+- Hardware and industrial design evaluations
+- User experience (UX) testing
+- Performance verification
+- Feature feasibility studies
+- Sensor and hardware validation
+- Engineering hypotheses
+- Experiment ownership tracking
+- Product improvement recommendations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Objectives
 
-## Expanding the ESLint configuration
+- Validate product assumptions using measurable experiments
+- Compare astraX against industry-leading competitors
+- Improve hardware, firmware, and user experience
+- Track engineering progress across teams
+- Maintain a single source of truth for product validation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Workflow
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Define hypothesis
+2. Design experiment
+3. Execute testing
+4. Record observations
+5. Analyze results
+6. Make engineering decisions
+7. Iterate and improve
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Target Users
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Product Engineers
+- Hardware Engineers
+- Firmware Developers
+- UX Designers
+- QA Engineers
+- Product Managers
+- R&D Teams
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**astraX – Experiment. Validate. Improve. Innovate.**
